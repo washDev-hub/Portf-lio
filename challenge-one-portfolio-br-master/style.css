@@ -1,0 +1,407 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #f5f5f5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+    --cor-de-texto: #333333;
+    --cor-de-contato:var(--cor-de-contato)
+  }
+
+
+
+/* ------------------------------ Seção Menu -------------------------------*/
+
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    
+    body {
+        background-color: var(--cor-de-fundo);
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        line-height: 1.6;
+        color: var(--cor-de-texto);
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    
+    ol, ul, li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--cor-do-link);
+    }
+    .cabecalho {
+        display: flex;
+        background-color: #ffffff;
+        gap: 10px;
+    }
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+        align-content: center;
+        display: flex;
+        margin: 2%;
+    }
+    .cabecalho__logo {
+        display: flex;
+        align-content: center;   
+        margin-left: 50px;  
+        width: 20px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    .navegacao {
+       align-content: center;
+       
+    }
+    .navegacao__lista {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-left: 250px;
+    }
+    .navegacao__elemento a {
+        font-size: 0.9rem;
+    } 
+    .apresentacao {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px;
+    }
+    .apresentacao__foto {
+        width: 20rem;
+        display: flex; 
+        justify-content: flex-end;
+        border-radius: 160px;
+    }
+    .apresentacao__titulo {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+    .apresentacao__subtitulo {
+        font-size: 18px;
+        margin-top: 80px;
+    }
+    
+    .redes {
+        display: flex;
+        align-items: flex-start;
+        gap: 100px;   
+    }
+    .sobre-mim {
+        text-align: center;
+        text-align: justify;
+        letter-spacing: 1px;
+        margin: 10px 50px 30px 50px;
+    }
+
+    .sobre-mim__assinatura{
+        width: 80px;
+    }
+    .habilidades__titulo {
+        text-align: center;
+        
+    }
+    .habilidades__lista {
+        display: flex;
+        justify-content: center;
+        gap: 95px;
+        margin: 50px;
+        text-align: center;
+        
+
+    }
+    .hobbies__titulo {
+        text-align: center;
+    }
+    .hobbies__lista {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        margin: 50px;
+        text-align: center;
+    
+    }
+    
+    .formacao__titulo {
+        text-align: center;
+        
+    }
+    .formacao__icone-alura {
+        width: 100px;
+        height: min-content;
+        
+    }
+    .formacao__icone {
+        width: 200px;
+        display: flex;
+        align-items: baseline;
+    }
+    .formacao__icone-focus {
+        width: 67px;
+    }
+    .formacao__nome {
+        align-items: baseline;
+    }
+    .formacao__lista {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 40px;
+        text-align: center;
+        align-content: baseline;
+    }
+    .projetos {
+        text-align: center;
+    }
+    .projetos__titulo {
+        text-align: center;
+    }
+    .projetos__conteiner {
+        display: inline-block; 
+    }
+
+
+/* Contêiner do portfólio */
+.portfolio {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Cada projeto */
+  .project {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efeito de hover */
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Links de projeto */
+  .project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  /* Imagens dos projetos */
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-link:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  /* Título do projeto */
+  .project h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Conteúdo do projeto */
+  .project-content {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+
+    }
+    .contato__titulo {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 50px;
+        margin-left: 50px;
+
+    }
+    .contato {
+        background-color: rgb(208, 255, 247);
+        display: flex;
+        outline: none;
+        gap: 60px;
+        
+    }
+    .contato__formulario {
+        display: flex;
+        flex-direction: column; 
+        gap: 30px;
+        justify-content: space-evenly;
+        border: none;
+        outline: none;
+        width: 40%;
+        padding: 10px;
+        margin-bottom: 12px;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: auto;      
+    }
+    .contato__campo {
+        border: none;
+        height: 40px;
+    }
+    .contato__botao {
+        width: 50px;
+        align-items: center;
+        align-self: center;
+    }
+    .foto__contato {
+        width: 250px;
+        height: 250px;
+        border-radius: 150px;
+        align-self: center;  
+    }
+    .contato__botao {
+        background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+    }
+    .contato__botao:hover {
+        background-color: #547200;
+    }
+
+    body.dark-theme {
+        --cor-de-fundo: #000000;
+        --cor-de-fundo-menu: #00ff9d;
+        --cor-do-link: #5f5e5e;
+        --cor-de-contato:var(--cor-de-contato);
+        --cor-de-texto: #20b86cf8;
+        
+      }
+      
+      
+      .toggle-theme {
+        background-color: var(--cor-de-fundo-menu);
+        border: 1px solid var(--cor-do-link);
+        color: var(--cor-do-link);
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:  0.3s ease, color 0.3s ease;
+      }
+      
+      .toggle-theme:hover {
+        background-color: var(--cor-do-link);
+        color: var(--cor-de-fundo-menu);
+      }
+    
+      /*apresentação*/
+      @keyframes slide-in {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      .apresentacao {
+        animation: slide-in 1s ease-out;
+      }
+      /*Projetos*/
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      
+      .project {
+        animation: fade-in 0.8s ease-in-out;
+      }
+      
+      /* Estilo base para os links no header */
+.navegacao__elemento a {
+    font-size: 0.9rem;
+    color: var(--cor-do-link);
+    transition: color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Efeito hover nos links */
+.navegacao__elemento a:hover {
+    color: #000000; /* Cor alterada ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+}
+
+/* Estilo base para o cabeçalho */
+.cabecalho {
+    display: flex;
+    background-color: var(orange);
+    gap: 10px;
+    transition: background-color 0.3s ease; /* Adiciona transição suave no fundo */
+}
+
+/* Efeito hover no cabeçalho */
+.cabecalho:hover {
+    background-color: #c1fbff; /* Cor de fundo ao passar o mouse */
+}
+
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    
+}
+
+/* Estilos para telas de até 375px de largura (Mobile) */
+@media (max-width: 375px) {  
+    
+    }
+ 
+  
+  
