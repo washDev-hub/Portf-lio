@@ -6,33 +6,6 @@
     --cor-de-texto: #333333;
     --cor-de-contato:var(--cor-de-contato)
   }
-
-
-
-/* ------------------------------ Seção Menu -------------------------------*/
-
-
-/* ------------------------------ Seção Apresentação ------------------------------*/
-
-/* ------------------------------ Seção Sobre mim ----------------------------------*/
-
-
-/*------------------------------ Seção de Habilidades ------------------------------*/
-
-
-/*------------------------------ Seção de Hobbies --------------------------------*/
-
-
-/*------------------------------ Seção de Projetos --------------------------------*/
-
-
-/*------------------------------ Seção de Contato ---------------------------------*/
-
-
-/* ------------------------------ Responsividade ---------------------------------------*/
-
-
-
 /* Telas grandes */
 @media (min-width: 1024px) {
     /* Aqui você pode ajustar ainda mais o design para telas grandes */
@@ -404,4 +377,182 @@
     }
  
   
-  
+/*RESPONSIVIDADE*/
+
+/* Telas pequenas (Smartphones, 480px ou mais) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .cabecalho {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.2rem;
+    }
+
+    .navegacao__lista {
+        display: none;
+    }
+
+    .toggle-theme {
+        margin-top: 10px;
+    }
+
+    .apresentacao__titulo {
+        font-size: 26px;
+        text-align: center;
+    }
+    .apresentacao__subtitulo {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .redes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .sobre-mim__texto {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Habilidades */
+    .habilidades__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hobbies__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .formacao__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .foto__contato {
+        width: 180px;
+        height: 180px;
+    }
+
+    .contato__formulario {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contato__campo {
+        width: 100%;
+        height: 35px;
+    }
+
+    .contato__botao {
+        width: 100%;
+        height: 40px;
+    }
+}
+
+/* Telas muito pequenas (Smartphones pequenos, menos de 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .cabecalho {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1rem;
+    }
+
+    .navegacao__lista {
+        display: none;
+    }
+
+    .apresentacao__titulo {
+        font-size: 22px;
+        text-align: center;
+    }
+    .apresentacao__subtitulo {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .redes {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .habilidades__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobbies__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formacao__lista {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .foto__contato {
+        width: 160px;
+        height: 160px;
+    }
+
+    .contato__formulario {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contato__campo {
+        width: 100%;
+        height: 30px;
+    }
+
+    .contato__botao {
+        width: 100%;
+        height: 35px;
+    }
+
+    /* Alternando a visibilidade do menu */
+    .navegacao__lista {
+        display: block;
+    }
+}
